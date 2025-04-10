@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:/Keil_v5/ARM/ARMCC/bin/armcc.bin",
+            "intelliSenseMode": "clang-arm"
+        }
+    ],
+    "version": 4
+}

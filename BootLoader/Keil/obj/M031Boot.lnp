@@ -1,0 +1,16 @@
+--cpu Cortex-M0
+".\obj\system_m031series.o"
+".\obj\startup_m031series.o"
+".\obj\retarget.o"
+".\obj\uart.o"
+".\obj\clk.o"
+".\obj\fmc.o"
+".\obj\sys.o"
+".\obj\main.o"
+".\obj\hardware.o"
+".\obj\boot.o"
+".\obj\fmcuser.o"
+--library_type=microlib --strict --scatter ".\obj\M031Boot.sct"
+--map --first='startup_M031Series.o(RESET)' --datacompressor=off --info=inline --entry Reset_Handler --summary_stderr --info summarysizes --map --load_addr_map_info --symbols
+--info sizes --info totals
+--list ".\lst\M031Boot.map" -o .\obj\M031Boot.axf
